@@ -11,9 +11,25 @@ class Customer:
        
         if self.name ==name and self.create_password == create_password and self.confirm_password==confirm_password and self.email==email:
             return " You have successfully signed up"
-
+        
         else:
-            return "You are require dto fill in the spaces"
+            return "Password  and Confirm assword does not much"
 
 new_customer = Customer("Emily Haile", "passwordI22j78", "passwordI22j78" ,"haileemily@gmail.com")
-print("You have signed up successfully")
+
+result=new_customer.sign_up("Emily Haile", "passwordI22j78", "passwordI22j78" ,"haileemily@gmail.com")
+
+print(result)
+
+class Signin:
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+    def signin(self):
+        if self.username == self.username and self.password == self.password:
+            return "Successful"
+        else:
+            return "Invalid username or password"
+user = Signin("nyeliep", "ocean@eyes")
+result = user.signin()
+print(result)
