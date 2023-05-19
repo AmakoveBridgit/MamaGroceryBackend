@@ -6,6 +6,7 @@ class Cart:
         for item in self.items:
             if item['product']==product:
                 item['quantity']+=quantity
+                
                 return "quantity updated"
             
         self.items.append({'product':product,'quantity':quantity})
