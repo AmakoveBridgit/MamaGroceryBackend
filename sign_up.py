@@ -13,7 +13,7 @@ class Customer:
             return " You have successfully signed up"
         
         else:
-            return "Password  and Confirm assword does not much"
+            return "Password  and Confirm Password does not much"
 
 new_customer = Customer("Emily Haile", "passwordI22j78", "passwordI22j78" ,"haileemily@gmail.com")
 
