@@ -8,7 +8,7 @@ class Items:
         
     def check_offers_available(self):
         if self.item_name in self.items_on_offer.keys():
-            self.add_to_cart[self.item_name] = self.price
+            self.add_to_cart[self.item_name] = self.p
         return self.add_to_cart
     
 pineapples = Items("Pineapples", 200, {"Apples": 300, "Mangoes": 200 ,"Pineapples": 200})
