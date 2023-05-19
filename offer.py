@@ -13,7 +13,7 @@ class Items:
     
 pineapples = Items("Pineapples", 200, {"Oranges": 300, "Mangoes": 200 ,"Pineapples": 200})
 
-mangoes = Items("Mangoes", 200,{ "Oranges": 300, "Pineapples": 200, "Mangoes":200})
+mangoes = Items("Mangoes", 500,{ "Oranges": 300, "Pineapples": 200, "Mangoes":200})
 
 oranges = Items("Oranges", 300, {"Pineapples": 200, "Mangoes": 200, "Oranges": 250})
 
@@ -26,7 +26,7 @@ print(oranges.check_offers_available())
 
 
 # {'Pineapples': 200}
-# {'Mangoes': 200}
+# {'Mangoes': 500}
 # {"oranges":300}
 
 
