@@ -27,6 +27,6 @@ print(oranges.check_offers_available())
 
 # {'Pineapples': 200}
 # {'Mangoes': 200}
-# {'Oranges': 300}
+# {"apple":300}
 
 
