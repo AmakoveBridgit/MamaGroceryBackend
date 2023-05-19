@@ -1,19 +1,25 @@
 class Product:
-    def __init__(self,name,price,description):
+    def __init__(self,name,price,description,category):
         self.name=name
         self.price=price
         self.description =description
-    def Order(self,items):
+        self.category = category
+
+    def order(self,items):
         self.items = items
         self.total_price = sum([item['product'].price * item['quantity'] for item in items])
         print(f"Order")
+        
+    def set_category(self, category):
+        self.category = category
+
 
 items = [{'product': Product('Product1', 10, 'Description1'), 'quantity': 2},
          {'product': Product('Product2', 20, 'Description2'), 'quantity': 3}]
 
 product = Product('Product3', 30, 'Description3')
-product.Order(items)
-
+product.set_category('Category3')
+product.order(items)
 
 # >>> from MamaGroceryBackend.product import Product
 # >>> order=sum([400*2,300*3])
@@ -26,6 +32,10 @@ product.Order(items)
 # >>> product1
 # ('mango', 233, 'it is sweeter')
 # >>> exit()
+class ProductCategory:
+    def __init__(self,name,products):
+        self.name = name
+        self.products = products
+
         
-       
     
