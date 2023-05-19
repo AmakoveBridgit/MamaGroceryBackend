@@ -11,22 +11,22 @@ class Items:
             self.add_to_cart[self.item_name] = self.price
         return self.add_to_cart
     
-pineapples = Items("Pineapples", 200, {"Oranges": 300, "Mangoes": 200 ,"Pineapples": 200})
+pineapples = Items("Pineapples", 200, {"Apples": 300, "Mangoes": 200 ,"Pineapples": 200})
 
-mangoes = Items("Mangoes", 500,{ "Oranges": 300, "Pineapples": 200, "Mangoes":200})
+mangoes = Items("Mangoes", 500,{ "Apples": 300, "Pineapples": 200, "Mangoes":200})
 
-oranges = Items("Oranges", 300, {"Pineapples": 200, "Mangoes": 200, "Oranges": 250})
+apples = Items("Oranges", 300, {"Pineapples": 200, "Mangoes": 200, "Apples": 250})
 
 
 print(pineapples.check_offers_available())
 
 print(mangoes.check_offers_available())
 
-print(oranges.check_offers_available())
+print(apples.check_offers_available())
 
 
 # {'Pineapples': 200}
 # {'Mangoes': 500}
-# {"oranges":300}
+# {"apples":300}
 
 
