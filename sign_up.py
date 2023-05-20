@@ -1,4 +1,4 @@
-ss Customer:
+class Customer:
     def __init__(self, name, create_password, confirm_password, email):
         self.name = name
         self.email = email
